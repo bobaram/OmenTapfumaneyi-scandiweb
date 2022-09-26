@@ -1,0 +1,154 @@
+.right {
+  width: 27%;
+  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.title {
+  width: 70%;
+  height: 12%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.title h3 {
+  font-weight: 600;
+  font-size: 26px;
+  line-height: 27px;
+  color: #1d1f22;
+}
+.title h2 {
+  font-weight: 400;
+  text-transform: capitalize;
+  font-size: 22px;
+  line-height: 27px;
+  color: #1d1f22;
+}
+.size {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18px;
+  width: 70%;
+  height: 15%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.size h2 {
+  color: red;
+  font-size: 20px;
+}
+.sizes {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 80%;
+  margin-top: 5%;
+}
+
+.sizes .sizeBox {
+  width: 17%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid black;
+}
+
+.sizes .sizeBox:hover {
+  background-color: black;
+  color: white;
+  cursor: pointer;
+}
+.sizes .sizeBox span {
+  font-size: 11px;
+}
+.sizes .colorBox {
+  width: 17%;
+  height: 70%;
+  border: 1px solid black;
+}
+
+.sizes .colorBox:hover {
+  background-color: black;
+  cursor: pointer;
+}
+.colorSelect {
+  width: 17%;
+  height: 70%;
+  border: 3px solid #5ece7b;
+}
+
+.price {
+  width: 70%;
+  height: 10%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+.price h4 {
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 18px;
+}
+.price span {
+  font-weight: 700;
+  font-size: 24px;
+  height: 25px;
+  line-height: 18px;
+}
+
+.button {
+  width: 70%;
+  height: 10%;
+  border: none;
+  background: #5ece7b;
+  color: white;
+}
+
+.button:hover {
+  cursor: pointer;
+}
+.description {
+  width: 80%;
+  height: 25%;
+  color: #1d1f22;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 159%;
+  overflow-y: auto;
+}
+.description::-webkit-scrollbar {
+  display: none;
+}
+.description div {
+  width: 100%;
+  height: 100%;
+}
+.description div ul li {
+  font-size: 12px;
+  margin-top: 7px;
+  padding: 0 5%;
+}
+
+.description h3,
+.description p,
+.description h1 {
+  font-size: 14px;
+  margin-top: 5px;
+}
+
+.boxSelect {
+  background-color: #1d1f22;
+}
+.boxSelect span {
+  color: #ffff;
+}

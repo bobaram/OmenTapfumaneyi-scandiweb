@@ -1,0 +1,155 @@
+.cartItem {
+  width: 80%;
+  height: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: #1d1f22 1px solid;
+}
+.left {
+  margin-top: 5px;
+  width: 25%;
+  height: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.left .brand,
+.left .type {
+  font-weight: 600;
+  font-size: 30px;
+  line-height: 27px;
+  color: #1d1f22;
+}
+.left .type {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 27px;
+}
+.left .price {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 24px;
+  color: #1d1f22;
+}
+
+.left .sizes {
+  width: 90%;
+  height: auto;
+  display: flex;
+  flex-direction: column;
+}
+.left .attribute span {
+  font-weight: 700;
+  font-size: 15px;
+  line-height: 16px;
+  color: #1d1f22;
+}
+
+.left .sizes .boxes {
+  margin-top: 10px;
+  display: flex;
+  justify-content: flex-start;
+}
+.left .sizes .boxes .box {
+  margin-right: 10px;
+  width: 30px;
+  height: 27px;
+  border: 1px solid #1d1f22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.left .sizes .boxes .box span {
+  font-family: sans-serif;
+  font-style: normal;
+  text-align: center;
+  font-weight: 300;
+  font-size: 9px;
+  line-height: 70px;
+}
+
+.right {
+  display: flex;
+  justify-content: space-between;
+  width: 30%;
+  height: 80%;
+}
+
+.numbers,
+.image {
+  height: 100%;
+}
+
+.numbers {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.numbers .sign,
+.numbers div {
+  width: 70%;
+  height: 24%;
+  color: black;
+  border: 1px solid #1d1f22;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.numbers .sign span {
+  font-weight: 300;
+  font-size: 30px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+}
+
+.amount {
+  font-weight: 300;
+  font-size: 18px;
+}
+.numbers .sign:hover {
+  background-color: #1d1f22;
+  color: white;
+  cursor: pointer;
+}
+
+.numbers div {
+  border: none;
+}
+
+.image {
+  width: 60%;
+  position: relative;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.theme {
+  color: white;
+}
+
+.prev,
+.next {
+  position: relative;
+  cursor: pointer;
+  z-index: 10;
+  width: 20px;
+  height: 20px;
+  background-color: #1d1f22;
+  color: white;
+}
+.prev {
+  top: 99%;
+  left: 75%;
+}
+.next {
+  top: 99%;
+  left: 80%;
+}

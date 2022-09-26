@@ -1,0 +1,132 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 16px;
+}
+.container:hover {
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+.image {
+  width: 356px;
+  height: 338px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.cartCont {
+  position: absolute;
+  z-index: 1;
+  cursor: pointer;
+  right: 25px;
+  top: 94%;
+  width: 12%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  background: #5ece7b;
+  display: none;
+}
+.cart {
+  margin-left: 8px;
+  color: #ffffff;
+}
+.text {
+  width: 100%;
+  height: 25%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
+.title {
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 160%;
+  color: #8d8f9a;
+}
+
+.price {
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 160%;
+  color: #1d1f22;
+}
+.show {
+  display: flex;
+}
+.overlay::before {
+  position: absolute;
+  display: block;
+  transform: translateX(-50%);
+  left: 50%;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  opacity: 0.5;
+  content: "";
+}
+.overlay::after {
+  content: "Out Of Stock !";
+  color: #8d8f9a;
+  position: absolute;
+  right: 25%;
+  font-size: 25px;
+  font-weight: 400;
+}
+.backdrop {
+  position: fixed;
+  top: 50px;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  z-index: 2;
+  background: rgba(57, 55, 72, 0.22);
+}
+
+form {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+label {
+  font-size: 20px;
+}
+select {
+  margin-left: 5px;
+  width: 160px;
+  height: 30px;
+  text-align: center;
+}
+.buttons {
+  width: 280px;
+  height: 40px;
+  display: flex;
+  justify-content: space-evenly;
+}
+button {
+  width: 120px;
+  height: 100%;
+  text-align: center;
+  background: #5ece7b;
+  border: 1px green solid;
+  color: white;
+}
+
+.disabled {
+  background-color: grey;
+  color: white;
+}

@@ -1,0 +1,38 @@
+.plp {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+.left {
+  width: 15%;
+}
+.right {
+  width: 85%;
+  padding-bottom: 60px;
+  overflow-y: scroll;
+}
+
+.right::-webkit-scrollbar {
+  display: none;
+}
+
+.header {
+  height: 120px;
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+.header h2 {
+  margin-left: 45px;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 160%;
+}
+
+.items {
+  display: grid;
+  grid-template-columns: repeat(3, 370px);
+  grid-auto-rows: 440px;
+  justify-content: center;
+  grid-gap: 70px;
+}
